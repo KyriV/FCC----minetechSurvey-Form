@@ -20,6 +20,10 @@ img {
 	max-width: 100%;
 }
 
+#survey-form div {
+	padding: 7px 0;
+}
+
 
 .header {
 	background-color: #F9FAFF;
@@ -34,15 +38,15 @@ img {
 }
 
 hr {
-	
 	background-color: #2E5BFF;
-	height: 2px;
+	height: 3px;
 	max-width: 150px;
 	margin: 0;
 }
 
 h1 {
 	color: #2E5BFF;
+	font-weight: 400;
 }
 
 .title1 {
@@ -56,11 +60,46 @@ h1 {
 input, select, textarea {
 	border: solid #ECF0FF 1px;
 	background-color: #F9FAFF;
+	border-radius: 5px;
 }
 
 label {
 	font-size: 0.75em;
 }
+
+#name, #gender, #email, #number, #cv, #dropdown  {
+	width: 300px;
+	height: 30px;
+}
+
+#cv {
+	padding: 3px 3px;	  
+}
+
+
+
+#about {
+	width: 300px;
+	height: 100px;
+}
+
+textarea::placeholder {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button {
+	background-color: #2E5BFF;
+	width: 300px;
+	height: 30px;
+	font-size: 1em;
+	color: #ffffff;
+	border-radius: 5px;
+	border: 0;
+	font-weight: 300;
+	text-transform: uppercase;
+
+}
+
 
 
 @media screen and (min-width: 768px) {

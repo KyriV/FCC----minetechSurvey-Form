@@ -1,13 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
+	margin: 0;
 }
 
 main {
 	display: flex;
 	justify-content: center;
-}
-h1 {
-	color: #2E5BFF;
-	
+	flex-direction: column;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
+
+img {
+	max-width: 100%;
+}
+
+
+.header {
+	background-color: #F9FAFF;
+}
+
+.header, .form {
+	padding: 15px;
+}
+
+#description {
+	margin-bottom: 0.5vh;
+}
+
+hr {
+	
+	background-color: #2E5BFF;
+	height: 2px;
+	max-width: 150px;
+	margin: 0;
+}
+
+h1 {
+	color: #2E5BFF;
+}
+
+.title1 {
+	font-size: 1.75em;
+}
+
+#description {
+	font-size: 1em;
+}
+
+input, select, textarea {
+	border: solid #ECF0FF 1px;
+	background-color: #F9FAFF;
+}
+
+label {
+	font-size: 0.75em;
+}
+
+
+@media screen and (min-width: 768px) {
+	main {
+		flex-direction: row;
+	}
+	.header, .form {
+		flex: 1;
+		padding: 30px;
+	}
+}

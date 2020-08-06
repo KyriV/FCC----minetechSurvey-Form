@@ -5,20 +5,23 @@
 	<link rel="stylesheet" type="text/css" href="SurveyForm.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	
 	<title>Survey Form</title>
 </head>
 <body>
 	<main>
-		<div>
+		<div class="header">
 			<h1 id="title">minetech</h1>
 
 			<img src="PersonalInfo.svg">
 		</div>
-		<div>
-			<h2>Join Us</h2>
-			<p id="description">Personal Info</p>
+		<div class="form">
+			<div class="form-header">
+				<h2 class="title1">Join Us</h2>
+				<p id="description">Personal Info</p>
+			</div>
 			<hr>
 			<form id="survey-form">
 				<div>
@@ -120,13 +123,13 @@
 
  				<div>
  					<label for="employment">Current Employment Status</label> <br>
- 					<input id="employment" type="radio" name="employmentStatus" value="Full Time" checked> Full-time <br>
- 					<input id="employment" type="radio" name="employmentStatus" value="Part Time"> Part-time <br>
- 					<input id="employment" type="radio" name="employmentStatus" value="Unemployed"> Unemployed <br>
+ 					<input id="employment" type="radio" name="employmentStatus" value="Full Time" checked> <label>Full-time</label> <br>
+ 					<input id="employment" type="radio" name="employmentStatus" value="Part Time"> <label>Part-time</label> <br>
+ 					<input id="employment" type="radio" name="employmentStatus" value="Unemployed"> <label>Unemployed</label> <br>
  				</div>
 
  				<div>
- 					<p>Why Do You Want to Join Us</p><br>
+ 					<label>Why Do You Want to Join Us</label><br>
  					<input id="whyJoining" type="checkbox" value="fun">
  					<label for="whyJoining">It's a fun place to work</label><br>	
 					<input id="whyJoining" type="checkbox" value="money">
@@ -136,9 +139,10 @@
  				</div>
 
 <!-- Upload CV -->
- 					<input id="cv" type="file" name="cv" accept="image/jpg, text/doc" required>
+ 					
  				<div>
  					<label for="cv">Upload CV</label>
+ 					<input id="cv" type="file" name="cv" accept="image/jpg, text/doc" required>
  				</div>
 
  				<div>
